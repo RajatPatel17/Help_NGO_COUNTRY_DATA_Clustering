@@ -39,7 +39,7 @@ if st.button('Predict the Development Category of the Country'):
     prediction = model.predict(final_input)[0]
     if prediction == 0:
         st.error('The Country falls under the Underdeveloped Country Category')
-    elif prediction == 1:
+    elif prediction == 2:
         st.success('The Country falls under the Developing Country Category')
     else:
         st.success('The Country falls under the Developed Country Category')
